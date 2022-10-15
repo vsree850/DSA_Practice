@@ -4,10 +4,10 @@
 #include <vector>
 
 using namespace std;
+
 // function: binarySearch
 // in[] : vec for search, element to find, start and end index to search.
 // return : index of the element on success and -1 on failure
-
 int binarySearch(std::vector<int> vec, int element, int start, int end)
 {
     while(start <= end)
@@ -33,7 +33,7 @@ int binarySearch(std::vector<int> vec, int element, int start, int end)
 
 int main() {
     std::vector<int> vec = {1,2,3,4,56,78,90,123,456,789};
-    int element = 90;
-    cout << binarySearch(vec, element, 0, vec.size()) << endl;;
+    int element = 789;
+    cout << binarySearch(vec, element, 0, vec.size()-1) << endl;;
     return 0;
 }
